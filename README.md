@@ -140,21 +140,21 @@ ShopsDB_ASIA — магазины Азии
 - данные копируются с master на slave с небольшой задержкой;  
 - при падении master возможен failover.
 
-### 4. Блок-схема архитектуры (логическая)
-
-Client
-  |
-  v
-Backend / API
-  |
-  v
-Shard Router (логика выбора базы)
-  |
-  +--> UsersDB_shard_N (Master -> Slave)
-  |
-  +--> BooksDB_shard_N (Master -> Slave)
-  |
-  +--> ShopsDB_shard_N (Master -> Slave)
+### 4. Блок-схема архитектуры (логическая)  
+  
+Client  
+  |  
+  v  
+Backend / API  
+  |  
+  v  
+Shard Router (логика выбора базы)  
+  |  
+  +--> UsersDB_shard_N (Master -> Slave)  
+  |  
+  +--> BooksDB_shard_N (Master -> Slave)  
+  |  
+  +--> ShopsDB_shard_N (Master -> Slave)   
 
 
 
